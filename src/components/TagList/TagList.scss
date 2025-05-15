@@ -1,0 +1,19 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+}

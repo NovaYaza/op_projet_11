@@ -1,0 +1,14 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+.site-footer {
+  background-color: variables.$bg-footer;
+  color: variables.$text-light;
+  text-align: center;
+  padding: 3rem 0rem 1rem 0rem;
+  margin-top: 3rem;
+}
+
+.logo_footer {
+  margin-bottom: 40px;
+}

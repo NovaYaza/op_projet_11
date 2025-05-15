@@ -1,0 +1,12 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+.rating-stars {
+  display: flex;
+  gap: 0.25rem;
+
+  i {
+    font-size: 1.2rem;
+    color: #ff6060;
+  }
+}

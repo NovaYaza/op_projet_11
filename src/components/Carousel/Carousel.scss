@@ -1,0 +1,49 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 25px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+
+    &.prev {
+      left: 1rem;
+    }
+
+    &.next {
+      right: 1rem;
+    }
+  }
+
+  .carousel-counter {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+}

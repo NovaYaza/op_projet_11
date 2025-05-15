@@ -1,0 +1,57 @@
+@use '../../styles/variables';
+
+.logement-page {
+  padding: 5rem;
+
+  .logement-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    gap: 2rem;
+
+    .left {
+      flex: 1 1 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h1 {
+        font-size: 36px;
+        color: #ff6060;
+      }
+
+      .location {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+
+    .right {
+      flex: 1 1 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+
+    .logement-collapse {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+
+    .collapse-column {
+        flex: 1;
+        min-width: 0; // évite débordements
+        isolation: isolate; // isole les animations et empêche les fuites visuelles
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

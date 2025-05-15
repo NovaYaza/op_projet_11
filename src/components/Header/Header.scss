@@ -1,0 +1,26 @@
+@use '@styles/variables';
+@use '@styles/mixins';
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 0rem 4rem;
+
+  .logo {
+    width: 210px;
+    height: 70px;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: variables.$text-dark;
+    font-weight: 500;
+    font-size: 24px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

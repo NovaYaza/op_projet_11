@@ -1,0 +1,15 @@
+@use '../../styles/variables';
+
+.home-container {
+  padding: 5rem;
+}
+
+.cards-container {
+  margin-top: 3rem;
+  background-color: variables.$background-light;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}

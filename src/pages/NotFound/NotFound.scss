@@ -1,0 +1,26 @@
+@use '../../styles/variables';
+
+.notfound {
+  text-align: center;
+  padding: 6rem 2rem;
+  color: variables.$primary;
+
+  .notfound-code {
+    font-size: 288px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .notfound-message {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 100px 0px 100px 0px;
+  }
+
+  .notfound-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+  }
+}
