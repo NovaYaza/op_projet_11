@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Card from '@components/Card/Card.jsx';
 import Banner from '@components/Banner/Banner.jsx';
+import accueilImage from '@assets/images/img_banner.png';
 import './Home.scss';
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <Banner text="Chez vous, partout et ailleurs" />
+      <Banner text="Chez vous, partout et ailleurs" image={accueilImage} />
 
       <section className="cards-container">
         {locations.map((logement) => (

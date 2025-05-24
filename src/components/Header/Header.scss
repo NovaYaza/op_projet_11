@@ -10,6 +10,11 @@
   .logo {
     width: 210px;
     height: 70px;
+
+      @media (max-width: 768px) {
+        width: 145px;
+        height: 45px;
+    }
   }
 
   nav a {
@@ -22,5 +27,13 @@
     &:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+      padding: 1.5rem 1rem 1rem 1rem;
   }
 }

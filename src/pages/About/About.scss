@@ -2,6 +2,10 @@
 
 .about-page {
   padding: 5rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 }
 
 .about-collapse {
@@ -9,5 +13,5 @@
   flex-direction: column;
   gap: 1.5rem;
   max-width: 1024px;
-  margin: 2rem auto;
+  margin: 4rem auto 0rem auto;
 }

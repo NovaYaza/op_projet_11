@@ -9,12 +9,20 @@
     font-size: 288px;
     font-weight: bold;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 96px;
+    }
   }
 
   .notfound-message {
     font-size: 36px;
     font-weight: 500;
     margin: 100px 0px 100px 0px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   .notfound-link {
@@ -22,5 +30,9 @@
     font-weight: 500;
     color: black;
     text-decoration: underline;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }

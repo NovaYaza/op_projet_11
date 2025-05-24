@@ -12,3 +12,12 @@
 .logo_footer {
   margin-bottom: 40px;
 }
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 3rem 6rem 2rem 6rem;
+  }
+    .logo_footer {
+      margin-bottom: 10px;
+  }
+}

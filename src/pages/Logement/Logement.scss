@@ -3,6 +3,10 @@
 .logement-page {
   padding: 5rem;
 
+  @media (max-width: 768px) {
+      padding: 1rem;
+  }
+
   .logement-header {
     display: flex;
     justify-content: space-between;
@@ -35,6 +39,12 @@
       align-items: flex-end;
       justify-content: space-between;
       gap: 1rem;
+
+        @media (max-width: 768px) {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+      }
     }
   }
 
@@ -50,8 +60,10 @@
         isolation: isolate; // isole les animations et empêche les fuites visuelles
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr 1fr;
+      flex-direction: column;
+      gap: 1.5rem;
     }
   }
 }

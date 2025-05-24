@@ -31,8 +31,34 @@
     }
   }
 
-  .collapse-content {
+  /* .collapse-content {
     padding: 0;
+    animation: fadeSlideDown 0.2s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  } */
+
+  .collapse-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-20px);
+    padding: 0 1rem;
+
+    &.open {
+      opacity: 1;
+      max-height: 500px;
+      transform: translateY(0);
+      padding: 1rem;
+    }
+
+    &.closed {
+      opacity: 0;
+      max-height: 0;
+      transform: translateY(-10px);
+      padding: 0 1rem;
+    }
   }
 
   .collapse-inner {
@@ -61,4 +87,15 @@
       transform: translateY(0);
     }
   }
+
+  /* @keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 }
